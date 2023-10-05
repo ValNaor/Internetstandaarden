@@ -1,0 +1,400 @@
+* { 
+
+    margin: 0em;
+    padding: 0em;
+}
+
+body{
+    
+    background-color: white;
+     
+}
+
+@font-face{
+    font-family: 'poppins-medium' ;
+    src: url(../fonts/broodtekst/Poppins-Medium.ttf)
+
+}
+
+@font-face{
+
+    font-family:'alegreya';
+    src: url(../fonts/headers/AlegreyaSans-Bold.ttf)
+
+}
+
+#homepage h2{
+
+    font-size: 4em;
+    color: rgb(34, 37, 39);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'poppins-medium';
+    color: rgb(214, 207, 207);
+    
+}
+
+
+p { 
+    font-family: 'poppins-medium';
+    font-size: 1em;
+}
+
+h1 {   
+    font-family: 'Franklin Gothic Heavy', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding-top: 12%;
+    margin-bottom: 12%;
+    font-size: 16.6em;
+    color: rgb(214, 207, 207); /*donker grijs*/
+    
+}
+
+h2 { 
+    font-family: 'alegreya';
+    font-size: 40px;
+}
+
+
+header nav ul {
+    
+     margin-bottom: 0em;                 
+     display: flex;
+     list-style-type: none; 
+     padding-bottom: 0.5em;
+     justify-content: space-around;  /*spacing*/
+     
+     
+}
+
+header nav ul li {
+    
+    list-style-type: none; 
+    font-family: 'Franklin Gothic heavy', 'Arial Narrow', Arial, sans-serif;
+    padding: 1em;
+    
+}
+
+header nav ul li a {
+
+    padding: 1em; 
+    text-decoration: none; 
+    color: rgb(214, 207, 207);
+    transition: 0.2s;
+    
+}
+
+header nav ul li a:hover{
+    color: #7C27F2;
+    transition: 0.5s;
+    padding: 1em;
+    
+}
+
+header {
+
+    background-color: rgb(34, 37, 39) ;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+#homepage h1{
+    margin: 0;
+}
+
+#homepage {
+
+    background-image:  url(../images/landingpage/landingpage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 1.5em;
+    height: 40em;  
+
+}
+
+
+#homepage div:nth-child(2){
+    margin-right: 10%;
+}
+
+#homepage div:first-of-type, #homepage div:nth-child(2){
+    
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    height: 10%;
+    background-color: rgb(34, 37, 39);
+    margin-left: 13.5%;
+    transition: 1s;
+}
+
+#homepage div:first-of-type:hover, #homepage div:nth-child(2):hover{
+    
+    margin-top: -1%;
+    padding: 1em;
+    transition: 1s;
+    margin-right: -2%;
+    margin-bottom: -0.5%;
+ }
+
+#homepage div a:hover{
+
+    color: #7C27F2;
+    transition: 0.5s;
+    
+    
+}
+
+#homepage div:nth-child(3):hover{
+
+    padding: 6em ;
+    margin-left: 7%;
+    margin-top: 7%;
+    transition: 1s;
+    
+}
+
+#homepage div:nth-child(3){
+    
+    width: 75%;
+    margin: 9%;
+    background-image: url(../images/games/steam.jpg);
+    padding: 4.5em;
+    text-align: center;
+    transition: 1s;
+}
+
+#homepage div a{
+    
+    font-family: 'alegreya';
+    font-size: 3em;
+    padding: 3em ;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    transition: 0.5s;
+}
+
+#homepage p{
+
+    background-color: rgb(34, 37, 39);opacity: 95%;
+    color: rgb(214, 207, 207);
+    padding: 2em;
+}
+
+img.ps5{
+
+    height: 50%;
+    width: 50%;
+}
+
+/*animatie op bij de console page*/
+@keyframes fromlefttoright {
+
+ 0% {
+    background-position: left, right
+  }
+ 100%{
+    background-position: right, right
+ }
+
+}
+
+#ps5 { 
+ margin-top: 1.5em;
+ margin-bottom: 1,5em;
+ background-image: url(../images/background/ps5/ps5_background.png);
+ background-position: right;
+ background-repeat: repeat; 
+ background-size: 70%;
+ 
+}
+
+#wiiu{
+
+    animation: fromlefttoright 30s infinite linear;
+}
+
+#xbox1{
+
+    animation: fromlefttoright 30s infinite linear;
+
+}
+
+#ps5{
+
+    animation: fromlefttoright 30s infinite linear;  /* animatie naam - hoe snel de animatie gaat - hoe lang de animatie doorloopt*/ 
+
+}
+
+#alienware{
+
+    animation: fromlefttoright 25s infinite linear;
+
+}
+/*einde animatie*/
+
+img.xbox1 {
+
+    height: 50%;
+    width: 50%;
+
+}
+
+#consoles section p{
+
+background-color: rgb(34, 37, 39); opacity: 95%;
+color: rgb(214, 207, 207);
+padding: 2em;
+
+}
+
+#consoles div img{
+
+    max-width: 30%;
+
+}
+
+#consoles h2{
+
+margin-top: 6em;
+color: rgb(34, 37, 39);
+}
+
+#alienware{
+
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-image: url(../images/background/alienware/alienware_background.png);
+    background-position: right;
+    background-repeat: repeat;
+    background-size: 75%;
+
+}
+
+#wiiu{
+
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-image: url(../images/background/wiiu/nintendo_background.png);
+    background-position: right;
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
+#xbox1 {
+
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    background-image: url(../images/background/xbox1/xbox1_background.png);
+    background-position: right;
+    background-repeat: repeat;
+    background-size: 50%;
+}
+
+main#games div{
+
+    display: flex;
+    min-width: 100%;
+    height: 62.5em;
+
+}
+
+#games div img{
+
+    width: 100%;
+    height: 100%;
+}
+
+#games h2{
+
+    background-color: rgb(34, 37, 39); opacity: 95%;
+    color: rgb(214, 207, 207) ;
+    padding: 0.5em;
+    text-align: center;
+    
+}
+
+#games section p{
+
+    background-color: rgb(34, 37, 39); opacity: 95%;
+    padding: 2em;
+    padding-bottom: 3em;
+    color: rgb(214, 207, 207);
+    
+}
+
+
+
+
+#consoles {
+
+    background-image: url(../images/consoles/front.jpg);
+    background-size:cover ;
+    height: 40em;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+#platforms section:first-of-type{
+
+    display: flex;
+    flex-direction: column-reverse;
+    background-repeat: no-repeat;
+    background-image: url(../images/platforms/steam.jpg);
+    background-color: #013A60 ;
+    height: 42em;
+    min-width: 100%;
+    
+
+}
+
+#platforms section p:first-of-type{
+    
+    margin: 1em;
+    color: white;
+    text-align: center;
+}
+
+#platform section:nth-child(3){
+
+    display: flex;
+    flex-direction: column-reverse;
+    background-repeat: no-repeat;
+    background-image: url(../images/platforms/origin.jpg);
+    background-color: white;
+    height: 42em;
+    min-width: 100%;
+}
+
+
+
+footer a{
+    
+   padding: 2em;
+   transition: 0.5s;
+}
+
+footer a:hover{
+
+    color: #7C27F2;
+    transition: 0.5s;
+
+}
+
+footer{
+
+    position: relative;
+    bottom: 0;
+    background-color: rgb(34, 37, 39);
+    padding: 2em;
+
+}
