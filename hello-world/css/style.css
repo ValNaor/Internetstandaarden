@@ -61,8 +61,9 @@ h2 {
 
 header nav ul {
     
-     margin-bottom: 0em;                 
+     max-width: 100%;                
      display: flex;
+     flex-direction: row;
      list-style-type: none; 
      padding-bottom: 0.5em;
      justify-content: space-around;  /*spacing*/
@@ -182,7 +183,7 @@ header {
 
 #homepage p{
 
-    background-color: rgb(34, 37, 39);opacity: 95%;
+    background-color: #2D3032;
     color: rgb(214, 207, 207);
     padding: 2em;
 }
@@ -248,7 +249,7 @@ img.xbox1 {
 
 #consoles section p{
 
-background-color: rgb(34, 37, 39); opacity: 95%;
+background-color: #2D3032;
 color: rgb(214, 207, 207);
 padding: 2em;
 
@@ -313,7 +314,7 @@ main#games div{
 
 #games h2{
 
-    background-color: rgb(34, 37, 39); opacity: 95%;
+    background-color: #2D3032;
     color: rgb(214, 207, 207) ;
     padding: 0.5em;
     text-align: center;
@@ -322,7 +323,7 @@ main#games div{
 
 #games section p{
 
-    background-color: rgb(34, 37, 39); opacity: 95%;
+    background-color: #2D3032;
     padding: 2em;
     padding-bottom: 3em;
     color: rgb(214, 207, 207);
@@ -344,35 +345,189 @@ main#games div{
 
 
 
-#platforms section:first-of-type{
-
-    display: flex;
-    flex-direction: column-reverse;
-    background-repeat: no-repeat;
-    background-image: url(../images/platforms/steam.jpg);
-    background-color: #013A60 ;
-    height: 42em;
-    min-width: 100%;
+main#platforms {
     
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+   
 }
 
-#platforms section p:first-of-type{
-    
-    margin: 1em;
-    color: white;
+
+
+main#platforms h1{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/landingpage/landingpage_platforms.jpg);
     text-align: center;
+    align-self: center;
+    width: 100%;
+    padding-bottom: 1em;
+    margin: 0em;
+
 }
 
-#platform section:nth-child(3){
-
+main#platforms div:first-of-type{
+    
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    background-image: url(../images/platforms/background/button/steam/steam_dark.png);
+    background-color: rgb(240, 240, 240); 
     background-repeat: no-repeat;
-    background-image: url(../images/platforms/origin.jpg);
-    background-color: white;
-    height: 42em;
-    min-width: 100%;
+    background-position: center;
+    background-size: 10%;
+    min-width: 70%;
+    height: 15em;
+    margin: 5em;
+    align-self: center;
+    position: relative;
+    align-items: center;
+    transition: 1s;
+}
+
+main#platforms div:nth-child(3){
+    
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/platforms/background/button/origin/origin.png);
+    background-color: rgb(240, 240, 240);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    min-width: 70%;
+    height: 15em;
+    align-self: center;
+    align-items: center;
+    transition: 1s;
+}
+
+main#platforms div:nth-child(5){
+    
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/platforms/background/button/battle_net/battle_net.png);
+    background-color: rgb(240, 240, 240);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12%;
+    min-width: 70%;
+    height: 15em;
+    align-self: center;
+    align-items: center;
+    transition: 1s;
+    margin-bottom: 5em;
+}
+
+main#platforms div:nth-child(5):hover{
+    
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/platforms/background/button/battle_net/battle_net_blue.png);
+    background-color: rgb(34, 37, 39);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+    min-width: 75%;
+    height: 16em;
+    align-self: center;
+    align-items: center;
+    transition: 1s;
+}
+
+
+
+main#platforms div:nth-child(3):hover{
+    
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/platforms/background/button/origin/origin_white.png);
+    background-color: #F24E29;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12%;
+    min-width: 75%;
+    height: 16em;
+    align-self: center;
+    align-items: center;
+    transition: 1s;
+}
+
+main#platforms div:nth-child(4){
+    
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/platforms/background/button/epic_games/epic_games.png);
+    background-color: rgb(240, 240, 240);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    min-width: 70%;
+    height: 15em;
+    margin: 5em;
+    align-self: center;
+    align-items: center;
+    transition: 1s;
+}
+
+main#platforms div:nth-child(4):hover{
+    
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/platforms/background/button/epic_games/epic_games_white.png);
+    background-color: rgb(34, 37, 39);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12%;
+    min-width: 75%;
+    height: 16em;
+    
+    transition: 1s;
+}
+
+main#platforms div:first-of-type:hover{
+    
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/platforms/background/button/steam/steam.png);
+    background-color: #2a475e;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13%;
+    min-width: 75%;
+    height: 16em;
+    margin: 5em;
+    transition: 1s;
+}
+
+
+#platforms section{
+
+    display:flex;
+    flex-direction: column;
+    background-color:#2D3032;
+    max-width: 100%;
+
+}
+    
+#platforms section h2{
+    
+    margin: 2em;  
+    color: rgb(240, 240, 240);
+    align-self: center;
+    
+}
+
+#platforms section p{
+    
+    margin-top: -2em;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-bottom: 4em;
+    color: rgb(240, 240, 240)
+
 }
 
 
@@ -397,4 +552,26 @@ footer{
     background-color: rgb(34, 37, 39);
     padding: 2em;
 
+}
+
+#sources div{
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   
+}
+
+#sources div a{
+    padding: 1em;
+    
+    transition: 1s;
+    background-color: #2D3032;
+}
+
+#sources div a:hover{
+
+    color: #7C27F2;
+    transition: 1s;
+    background-color: rgb(34, 37, 39)
 }
