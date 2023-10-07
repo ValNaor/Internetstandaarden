@@ -23,12 +23,7 @@ body{
 
 }
 
-#homepage h2{
 
-    font-size: 4em;
-    color: rgb(34, 37, 39);
-    text-align: center;
-}
 
 a{
     text-decoration: none;
@@ -55,7 +50,7 @@ h1 {
 
 h2 { 
     font-family: 'alegreya';
-    font-size: 40px;
+    font-size: 3em;
 }
 
 
@@ -104,89 +99,129 @@ header {
 }
 
 
-#homepage h1{
-    margin: 0;
-}
 
-#homepage {
 
-    background-image:  url(../images/landingpage/landingpage.jpg);
-    background-size: cover;
+main#homepage h1{
+
     background-repeat: no-repeat;
-    padding-bottom: 1.5em;
-    height: 40em;  
-
-}
-
-
-#homepage div:nth-child(2){
-    margin-right: 10%;
-}
-
-#homepage div:first-of-type, #homepage div:nth-child(2){
-    
-    display: inline-flex;
-    flex-direction: column;
+    background-size: cover;
+    background-image: url(../images/landingpage/landingpage.jpg);
     text-align: center;
-    width: 30%;
-    height: 10%;
-    background-color: rgb(34, 37, 39);
-    margin-left: 13.5%;
+    align-self: center;
+    min-width: 100%;
+    padding-bottom: 1em;
+    margin: 0em;
+
+}
+
+#homepage section:first-of-type{
+
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 100%;background-color: #2D3032 ;
+    color: rgb(214, 207, 207);
+
+}
+
+#homepage section h2{
+    padding-top: 0.5em;
+}
+
+#homepage section p{
+
+    padding: 2em;
+}
+
+#homepage section:nth-child(2){
+    
+    background-color: white
+
+}
+
+#homepage section div:first-of-type, #homepage section div:nth-child(2){
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgb(34, 37, 39);
+    position: relative;
+    align-items: center;
+    background-size: 10%;
+    min-width: 35%;
+    height: 15em;
+    top: -8em;
     transition: 1s;
+
+}
+
+#homepage section div:nth-child(3){
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../images/games/steam.jpg);
+    min-width: 80%;
+    height: 15em;
+    margin-bottom: 6em;
+    transition: 1s;
+    
 }
 
 #homepage div:first-of-type:hover, #homepage div:nth-child(2):hover{
-    
-    margin-top: -1%;
-    padding: 1em;
-    transition: 1s;
-    margin-right: -2%;
-    margin-bottom: -0.5%;
- }
 
-#homepage div a:hover{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgb(34, 37, 39);
+    position: relative;
+    align-items: center;
+    background-size: 10%;
+    min-width: 36%;
+    height: 16em;
+    top: -8em;
+    transition: 0.5s;
+
+}
+
+
+#homepage section div:nth-child(3):hover{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(34, 37, 39);
+    min-width: 82%;
+    height: 16em;
+    margin-bottom: 6em;
+    transition: 0.5s;
+    
+}
+
+#homepage section div a{
+
+    padding: 2em;
+    font-size: 3em; 
+    font-family: "alegreya";
+    transition: 0.5s;
+    
+}
+
+#homepage section div a:hover{
 
     color: #7C27F2;
     transition: 0.5s;
     
-    
 }
 
-#homepage div:nth-child(3):hover{
 
-    padding: 6em ;
-    margin-left: 7%;
-    margin-top: 7%;
-    transition: 1s;
-    
-}
-
-#homepage div:nth-child(3){
-    
-    width: 75%;
-    margin: 9%;
-    background-image: url(../images/games/steam.jpg);
-    padding: 4.5em;
-    text-align: center;
-    transition: 1s;
-}
-
-#homepage div a{
-    
-    font-family: 'alegreya';
-    font-size: 3em;
-    padding: 3em ;
-    padding-bottom: 2em;
-    padding-top: 2em;
-    transition: 0.5s;
-}
-
-#homepage p{
-
-    background-color: #2D3032;
-    color: rgb(214, 207, 207);
-    padding: 2em;
-}
 
 img.ps5{
 
