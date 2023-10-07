@@ -114,6 +114,7 @@ main#homepage h1{
 
 }
 
+
 #homepage section:first-of-type{
 
     display: flex;
@@ -127,11 +128,16 @@ main#homepage h1{
 
 #homepage section h2{
     padding-top: 0.5em;
+    padding-left: 0.8em;
+    background-color: #2D3032;
+    align-self: center;
+    width: 100%;
 }
 
 #homepage section p{
 
     padding: 2em;
+    background-color: #2D3032;
 }
 
 #homepage section:nth-child(2){
